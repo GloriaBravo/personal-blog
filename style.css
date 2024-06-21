@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(to bottom, #4d31da, #c7926a);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+/* Estilos para el menú */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40px;
+    background: linear-gradient(to bottom, #4d31da, #c7926a);
+    width: 100%;
+}
+
+#menu ul {
+    width: 100%; /* Cambiado de 300px a 100% para que sea responsive */
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#menu ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4, 7, 70);
+}
+
+.tit {
+    margin-top: 2rem;
+}
+
+.sub {
+    margin-top: 2rem;
+    color: #2f1d92;
+}
+
+.text {
+    margin-top: 1rem;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%; /* Cambiado height a max-width para mantener la proporción */
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position: top;
+}
+
+.inicio,
+.mis-proyectos {
+    width: 100%;
+    max-width: 800%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #614dc4, #e89b60);
+}
+
+.mi-linea {
+    border: none;
+    height: 2px;
+    background-color: #ad6fe7;
+}
+
+.proyecto1,
+.proyecto2,
+.proyecto3,
+.proyecto4 {
+    display: flex;
+    flex-direction: row; /* Asegura que los proyectos sean flexibles horizontalmente */
+    margin-bottom: 20px;
+    align-items: center;
+    border: rgb(22, 44, 211) solid 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info-proyecto1,
+.info-proyecto2,
+.info-proyecto3,
+.info-proyecto4 {
+    padding: 10px;
+}
+
+.info-proyecto1 h3,
+.info-proyecto2 h3,
+.info-proyecto3 h3,
+.info-proyecto4 h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info-proyecto1 p,
+.info-proyecto2 p,
+.info-proyecto3 p,
+.info-proyecto4 p {
+    margin: 5px 0 0;
+}
+
+.button {
+    background-color: linear-gradient(to bottom, #6c57d5, #dcb08e);
+    transform: translateY(8px);
+    border-radius: 5px;
+    border: none; /* Asegura que el botón no tenga borde */
+    padding: 10px 20px; /* Asegura que el botón tenga un padding adecuado */
+    color: white; /* Asegura que el texto del botón sea visible */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    background: linear-gradient(to bottom, #6c57d5, #dcb08e);
+    width: 100%; /* Asegura que el footer ocupe el ancho completo */
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div > div {
+    margin-left: 10px;
+}
+
+footer div span {
+    display: block;
+}
+
+/* Media queries para hacer el diseño responsive */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .inicio,
+    .mis-proyectos {
+        padding: 10px;
+    }
+    
+    img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .proyecto1,
+    .proyecto2,
+    .proyecto3,
+    .proyecto4 {
+        flex-direction: column;
+    }
+}
+
+footer .i {
+    margin: 2rem;
+    border-top: 1px solid rgb(46, 103, 146);
+    background-color: #a3c9c4;
+  }
+  
+  .i {
+    color: rgb(113, 25, 25);
+  }
+  
+  .footericons {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #6c57d5, #dcb08e);
+  }
+  
+  .footericons p {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  .footericons .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footericons .social-icons li {
+    display: inline-block;
+  }
+  
+  .footericons .social-icons a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .footericons .social-icons img {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .footericons .social-icons .bar {
+    height: 2px;
+    width: 0;
+    background-color: #306b5c;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .footericons .social-icons li:hover img {
+    transform: translateX(20px);
+  }
+  
+  .footericons .social-icons li:hover .bar {
+    width: 50px;
+  }
