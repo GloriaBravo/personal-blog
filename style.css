@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #4d31da, #c7926a);
+    background: linear-gradient(to bottom, #4d31da, #bcb0e4);
     color: white;
     text-align: center;
     padding: 40px;
@@ -26,7 +26,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     height: 40px;
-    background: linear-gradient(to bottom, #4d31da, #c7926a);
+    background: linear-gradient(to bottom, #4d31da, #bcb0e4);
     width: 100%;
 }
 
@@ -43,7 +43,7 @@ header {
 
 a {
     text-decoration: none;
-    color: rgb(4, 7, 70);
+    color: rgb(0, 1, 6);
 }
 
 .tit {
@@ -52,7 +52,7 @@ a {
 
 .sub {
     margin-top: 2rem;
-    color: #2f1d92;
+    color: #010007;
 }
 
 .text {
@@ -75,13 +75,13 @@ img {
     max-width: 800%;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(to bottom, #614dc4, #e89b60);
+    background: linear-gradient(to bottom, #4d31da, #bcb0e4);
 }
 
 .mi-linea {
     border: none;
     height: 2px;
-    background-color: #ad6fe7;
+    background-color: #bcb0e4;
 }
 
 .proyecto1,
@@ -121,7 +121,7 @@ img {
 }
 
 .button {
-    background-color: linear-gradient(to bottom, #6c57d5, #dcb08e);
+    background: linear-gradient(to bottom, #4d31da, #bcb0e4);
     transform: translateY(8px);
     border-radius: 5px;
     border: none; /* Asegura que el botón no tenga borde */
@@ -134,7 +134,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 85px;
-    background: linear-gradient(to bottom, #6c57d5, #dcb08e);
+    background: linear-gradient(to bottom, #4d31da, #5236ae);
     width: 100%; /* Asegura que el footer ocupe el ancho completo */
 }
 
@@ -194,7 +194,7 @@ footer .i {
   .footericons {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, #6c57d5, #dcb08e);
+    background: linear-gradient(to bottom, #4d31da, #bcb0e4);
   }
   
   .footericons p {
